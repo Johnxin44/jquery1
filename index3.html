@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The complete course of Jquery</title>
+  <style>
+    .effect1{width: 200px; height: 200px; background-color: gray; color: white; font-size: 2;}
+  </style>  
+<script src="./jquery.min.js"></script>
+<script>
+//JQuery Effect
+//First Effect Start
+//hide/slideUp/fadeOUT
+$(document).ready(function(){
+$('#butt1').click(function(){
+$('.effect1').slideUp(3000) ;
+});
+//Second Effect Start
+//show/sliderDown/fadeIn
+$('#butt2').click(function(){
+$('.effect1').slideDown(5000) ;
+});
+//Third Effect Start
+//Toggle/slideToggle/fadeToggle
+$('#butt3').click(function(){
+$('.effect1').slideToggle(4000) ;
+}); 
+});
+</script> 
+<style>
+
+</style>   
+</head>
+<body>
+    <button id="butt1">Cllick To Make Invisible </button>
+    <button id="butt2">Cllick To show The Information!</button>
+    <button id="butt3">Cllick To show & hide The Information!</button>
+    <div class="effect1">THE EFFECT</div>
+</body>
+</html>
+
